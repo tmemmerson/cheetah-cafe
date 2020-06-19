@@ -20,3 +20,33 @@ Style your site with CSS and images.
 Allow users to order more than one pizza with different toppings.
 Display the list of pizzas ordered as links that can be clicked for details.
 Offer a delivery option that then requires address information.
+
+
+Avery's Cheetah Cafe
+quesadillas menu
+vegetarian
+spicy
+meat
+small
+large
+
+Objectives
+specification: start with a base price for quesadilla
+input: n/a
+output: regular quesadillas $12
+
+specification: offer upsize/downsize options that change price
+input: cub/regular/large
+output: -$7/+$0/+$5
+
+specification: offer toppings & modifications to adjust price
+input: make spicy/add meat/vegetarian option
+output: +$2/+$3/+$4
+
+specification: take all user inputs and return price of order
+input: cub size/spicy/vegetarian
+output: ($12-$7+$2) = order total: $7.00
+
+specification: input user name to append/prepend to order total
+input: avery john emmerson
+output: Avery John Emmerson's Order Total: $7.00
