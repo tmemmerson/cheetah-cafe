@@ -17,14 +17,19 @@
           Avery's Cheetah Cafe'
         </div>
       </div>
+      <form>
       <div class="row"> 
-        <div class="col"> <!--buttons here-->
-          <button class="btn-warning">Spicy</button>
-          <button class="btn-warning">Chicken</button>
-          <button class="btn-warning">Steak</button>
+        <div class="col">
+          <button class="option btn-warning">Spicy</button>
+          <button class="option btn-warning">Chicken</button>
+          <button class="option btn-warning">Steak</button>
         </div>
         <div class="col-8">
-          top-mid
+          <select class = "form-control" id="sizeList" placeholder = "Quesadilla Size">
+            <option value="cub size">Cub Size</option>
+            <option value="regular">Regular Size</option>
+            <option value="big cat">Big Cat Size</option>
+          </select>
         </div>
         <div class="col">
           top-right
@@ -40,6 +45,7 @@
         <div class="col">
           bottom-right
         </div>
+        </form>
       </div>
     </div>
   </body>
