@@ -72,7 +72,13 @@ Name.prototype.nameForm = function() {
 
 
 $(document).ready(function() {
-
+let newOrder = new Order();
+let newName = new Name();
+let customsChoice = 0;
+$(".btn-warning").click(function( {
+  if ($(this).hasClass("clicked") === true) {
+    customsSelected += 4
+  }
 
 $("form").submit(function(event) {
   let customs = customsChoice
