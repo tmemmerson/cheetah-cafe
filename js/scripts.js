@@ -62,7 +62,8 @@ Order.prototype.receiptPrintDOM = function() {
 
 //DOM print user name input details (your first middle last)
 Name.prototype.nameForm = function() {
-  let text = '<div class="customer-name">' + '<div class="form-group">' + '<label for="first-name">First</label>' + '<input type="text" class="form-control first-name">' + '</div>'
+  let text = '<div class="customer-name">' + '<div class="form-group">' + '<label for="first-name">First</label>' + '<input type="text" class="form-control first-name">' + '</div>' + 
+                                             '<div class="form-group">' + '<label for="middle-name">Middle</label>' + '<input type="text" class="form-control middle-name">' + '</div>'
 }
 
 //USER LOGIC//
