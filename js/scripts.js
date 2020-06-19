@@ -55,8 +55,9 @@ Order.prototype.receiptPrintDOM = function() {
   }
   text += "<div class ='receiptTotal'> total here" + this.receiptTotal() + "</div>"
   for (var i=0; i < this.Names.length; i++) {
-    Text
-  }
+    text += "<p> we will announce this order for: " + this.Names[0].first + " " + this.Names[0].middle + " " + this.Names[0].last +".</p>"
+  };
+  return text;
 }
 
 //DOM print user name input details (your first middle last)
