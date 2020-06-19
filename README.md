@@ -1,19 +1,11 @@
 
-# _NAME_
+# _Avery's Cheetah Cafe_
 
-  
-
-#### _Turn a number string into "NAME"_	
-
-  
+#### _object oriented javascript exercise_	
 
 #### By _**Tristan Emmerson**_
 
-  
-
-## **Description**
-
-  
+## **A restaurant style app that allows the user to add and customize quesadillas for ordering from Avery's Cheetah Cafe**
 
 _DESCRIPTION._
 
@@ -21,71 +13,54 @@ _DESCRIPTION._
 
 | Spec 	| Input 	| Output 	|
 |-	|-	|-	|
-| all non-numeric and non-alphanumeric inputs will be rejected 	| OMGG 99s3!!& &*ROBO 445%% 	| "Please use only numbers. Our robot cannot translate such a complex and foreign alien language." 	|
-| take user input and assign to array 	| 13                                                                                                                                	| [0,1,2,3,4,5,6,7,8,9,10,11,12,13] 	|
-| take user array and apply first order rule 	| [0,1,2,3,4,5,6,7,8,9,10,11] 	| [0,1,2,"Won't you be my neighbor?",4,5,6,7,8,9,10,11,12,"Won't you be my neighbor?"] 	|
-| take user array and apply second order rule 	| [0,1,2,"Won't you be my neighbor?",4,5,6,7,8,9,10,11,12,"Won't you be my neighbor?"] 	| [0,1,"Boop!","Won't you be my neighbor?",4,5,6,7,8,9,10,11,"Boop!","Won't you be my neighbor?"] 	|
-| take user array and apply third order rule 	| [0,1,"Boop!","Won't you be my neighbor?",4,5,6,7,8,9,10,11,"Boop!","Won't you be my neighbor?"] 	| [0,"Beep!","Boop!","Won't you be my neighbor?",4,5,6,7,8,9,10,"Beep!","Boop!","Won't you be my neighbor?"] 	|
-| take user array after translation and display translated string to user 	| 13                                                                                                                                	| "0,"Beep!","Boop!","Won't you be my neighbor?",4,5,6,7,8,9,10,"Beep!","Boop!","Won't you be my neighbor?" 	|
+| start with a base price for quesadilla 	| n/a 	| regular quesadillas $12 	|
+| offer upsize/downsize options that change price 	| cub/regular/large 	| -$7/+$0/+$5 	|
+| offer toppings & modifications to adjust price 	| make spicy/add meat/vegetarian option 	| +$2/+$3/+$4 	|
+| take all user inputs and return price of order 	| cub size/spicy/vegetarian 	| ($12-$7+$2) = total: $7.00 	|
+| input user name to append/prepend to order total 	| Avery John Emmerson 	| Avery John Emmerson's Total: $7.00 	|
 
 ## **Setup/Installation Requirements**
 
-  
-
 *  _Recommended browser for everything in your life. [Google Chrome](https://www.google.com/chrome/)_.
 
-*  _Github [repository](https://github.com/tmemmerson/robo-rodgers.git)_
+*  _Github [repository](https://github.com/tmemmerson/cheetah-cafe.git)_
 
-*  _Live [demo](LINK)_
+*  _Live [demo](https://tmemmerson.github.io/cheetah-cafe/)_
 
+*  **If modifying for personal use** for windows: download/install Git for Windows [here](https://gitforwindows.org/)_ (v2.62.2 or newer)
 
-  
+* **Copy URL as shown in graphic below**
+
+![cloning](https://coding-assets.s3-us-west-2.amazonaws.com/img/clone.gif "How to clone repo")
+
+* **Paste copied URL into empty field after clicking "clone repository" button in VSCode**
+
+![cloning](https://coding-assets.s3-us-west-2.amazonaws.com/img/clone-github.gif "Cloning from Github within VSCode")
+
+* **Select the local directory folder where you would like to add this repository**
+
+* **double-click index.html to open in preferred browser for viewing**
+
+* **to edit project, select "open folder/open folder in new window" after you have successfully cloned the repo to your local machine.**
 
 ## **Known Bugs**
 
-  
-
-_No Known Bugs **6/12/2020**_
-
-  
+_No Known Bugs **6/19/2020**_
 
 ## **Support and contact details**
 
-  
-
 _Questions, comments and concerns can be directed to the author(s) [Tristan Emmerson](tristan@stickerslug.com)_
-
-  
 
 ## **Technologies Used**
 
-  
-
 _**This project was written in:** [Visual Studio Code](https://code.visualstudio.com/) (v1.45)_
-
-  
 
 ## **License**
 
+![alt text][logo]
 
-MIT License
+[logo]: https://img.shields.io/bower/l/bootstrap "MIT License"
+
 Copyright (c) 2020 **_Tristan Emmerson, Stickerslug Incorporated_**
 
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
