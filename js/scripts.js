@@ -77,8 +77,15 @@ let newName = new Name();
 let customsChoice = 0;
 $(".btn-warning").click(function( {
   if ($(this).hasClass("clicked") === true) {
-    customsSelected += 4
+    customsChoice += 4
   }
+  $(this).toggleClass("clicked")
+  customsChoice++
+  $("#customsChoice").text(customsChoice);
+});
+$
+
+
 
 $("form").submit(function(event) {
   let customs = customsChoice
