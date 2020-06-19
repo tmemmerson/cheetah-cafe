@@ -32,7 +32,9 @@ Quesadilla.prototype.price = function() {
     quesadillaPrice = quesadillaPrice;      
   }
   let customsPrice = this.customs
+  quesadillaPrice = quesadillaPrice + customsPrice;
   }
+  return quesadillaPrice;
 }
 
 //prototype total price ($5.00)
