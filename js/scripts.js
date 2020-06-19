@@ -1,8 +1,16 @@
 //BUSINESS LOGIC//
 
 //quesadilla price elements (spicy/meat/vegetarian)
+function Quesadilla(customs, size) {
+  this.customs = customs;
+  this.size = size;
+  this.quesadillaPrice = this.price(customs, size);
+}
 
 //name input elements (first middle last)
+
+
+
 
 //empty arrays for push customer choices to (quesadillas/names)
 
