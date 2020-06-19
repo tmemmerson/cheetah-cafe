@@ -38,7 +38,8 @@ Quesadilla.prototype.price = function() {
 }
 
 //prototype total price ($5.00)
-Order.prototype.totalPrice = function() {
+Order.prototype.totalPrice = function() { //for loop
+  let receiptTotal = 0
 
 }
 
