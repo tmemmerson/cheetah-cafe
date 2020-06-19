@@ -48,7 +48,7 @@ Order.prototype.totalPrice = function() { //for loop
 }
 
 //DOM print quesadilla order details (your quesadilla price)
-Order.prototype.orderPrintDOM = function() {
+Order.prototype.receiptPrintDOM = function() {
   let text = ""
   for (var i = 0; i < this.Quesadillas.length; i++) {
     text += "Quesadilla #" + (i +1) + "notes: " + this.Quesadillas[i].customs + "size: " + this.Quesadillas[i].size + "Receipt total: $" + this.Quesadillas[i].quesadillaPrice + ".00"
