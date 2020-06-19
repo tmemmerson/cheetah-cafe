@@ -6,3 +6,9 @@ body {
   background: #e2ca41d5;
   font-family: 'Shojumaru', cursive;
 }
+
+#heading {
+  font-family: 'Shojumaru', cursive;
+  font-weight: 300;
+  font-size: x-large;
+}
