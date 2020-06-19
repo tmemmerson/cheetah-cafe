@@ -15,6 +15,10 @@ function Name(first, middle, last) {
 }
 
 //empty arrays for push customer choices to (quesadillas/names)
+function Order() {
+  this.Quesadillas = [] //only instance
+  this.Names = [] //only instance
+}
 
 //prototype price changes relations (+=5/-=2)
 
