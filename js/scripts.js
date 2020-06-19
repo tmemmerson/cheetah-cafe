@@ -32,11 +32,13 @@ Order.prototype.totalPrice = function() {
 
 //DOM print quesadilla order details (your quesadilla price)
 Order.prototype.orderPrintDOM = function() {
-  
+
 }
 
 //DOM print user name input details (your first middle last)
-
+Order.prototype.namePrintDOM = function() {
+  
+}
 
 //USER LOGIC//
 
