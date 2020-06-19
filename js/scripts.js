@@ -16,58 +16,59 @@ function Name(first, middle, last) {
 
 //empty arrays for push customer choices to (quesadillas/names)
 function Order() {
-  this.Quesadillas = [] //only instance
-  this.Names = [] //only instance
+  this.Quesadillas = []; //only instance
+  this.Names = []; //only instance
 }
 
 //prototype price changes relations (+=5/-=2)
 Quesadilla.prototype.price = function() {
   let quesadillaPrice = 12;
-  let customsCount = this.customs
+  let customsCount = this.customs;
   if (this.size === "cub size") {
-    quesadillaPrice = quesadillaPrice - 7
+    quesadillaPrice = quesadillaPrice - 7;
   } else if (this.size === "big cat") {
-    quesadillaPrice = quesadillaPrice + 5) {
+    quesadillaPrice = quesadillaPrice + 5; {
   } else {
     quesadillaPrice = quesadillaPrice;      
-  }
-  let customsPrice = this.customs
+}
+  let customsPrice = this.customs;
   quesadillaPrice = quesadillaPrice + customsPrice;
   }
   return quesadillaPrice;
-}
+};
 
 //prototype total price ($5.00)
 Order.prototype.totalPrice = function() { //for loop
-  let receiptTotal = 0
+  let receiptTotal = 0;
   for (var i = 0; i < this.Quesadillas.length; i++) {
-    var receipt = this.Quesadillas[i]
+    var receipt = this.Quesadillas[i];
     receiptTotal += this.Quesadillas[i].quesadillaPrice;
   }
   return receiptTotal;
-}
+};
 
 //DOM print quesadilla order details (your quesadilla price + who its for)
 Order.prototype.receiptPrintDOM = function() {
-  let text = ""
+  let text = "";
   for (var i = 0; i < this.Quesadillas.length; i++) {
-    text += "Quesadilla #" + (i +1) + "notes: " + this.Quesadillas[i].customs + "size: " + this.Quesadillas[i].size + "Receipt total: $" + this.Quesadillas[i].quesadillaPrice + ".00"
+    text += "Quesadilla #" + (i +1) + "notes: " + this.Quesadillas[i].customs + "size: " + this.Quesadillas[i].size + "Receipt total: $" + this.Quesadillas[i].quesadillaPrice + ".00";
   }
-  text += "<div class ='receiptTotal'> total here" + this.receiptTotal() + "</div>"
-  for (var i=0; i < this.Names.length; i++) {
-    text += "<p> we will announce this order for: " + this.Names[0].first + " " + this.Names[0].middle + " " + this.Names[0].last +".</p>"
-  };
+  text += "<div class ='receiptTotal'> total here" + this.receiptTotal() + "</div>";
+  for (var i = 0; i < this.Names.length; i++) {
+    text += "<p> we will announce this order for: " + this.Names[0].first + " " + this.Names[0].middle + " " + this.Names[0].last +".</p>";
+  }
   return text;
-}
+};
 
 //DOM print user name input details (your first middle last)
 Name.prototype.nameForm = function() {
   let text = '<div class="customer-name">' + '<div class="form-group">' + '<label for="first-name">First</label>' + '<input type="text" class="form-control first-name">' + '</div>' + 
   '<div class="form-group">' + '<label for="middle-name">Middle</label>' + '<input type="text" class="form-control middle-name">' + '</div>' +
-  '<div class="form-group">' + '<label for="last-name">Last</label>' + '<input type="text" class="form-control last-name">' + '</div></div>'
-}
+  '<div class="form-group">' + '<label for="last-name">Last</label>' + '<input type="text" class="form-control last-name">' + '</div></div>';
+  return text;
+};
 
-//USER LOGIC//
+/* //USER LOGIC//
 $(document).ready(function() {
 
-}
+} */
