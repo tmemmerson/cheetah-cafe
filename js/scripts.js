@@ -1,26 +1,22 @@
 //BUSINESS LOGIC//
 
-//quesadilla price elements (spicy/meat/vegetarian)
 function Quesadilla(customs, size) {
   this.customs = customs;
   this.size = size;
   this.quesadillaPrice = this.price(customs, size);
 }
 
-//name input elements (first middle last)
 function Name(first, middle, last) {
   this.first = first;
   this.middle = middle;
   this.last = last;
 }
 
-//empty arrays for push customer choices to (quesadillas/names)
 function Order() {
-  this.Quesadillas = []; //only instance
-  this.Names = []; //only instance
+  this.Quesadillas = []; 
+  this.Names = [];
 }
 
-//prototype price changes relations (+=5/-=2)
 Quesadilla.prototype.price = function() {
   let quesadillaPrice = 12;
   let customsCount = this.customs;
@@ -37,8 +33,7 @@ Quesadilla.prototype.price = function() {
   return quesadillaPrice;
 };
 
-//prototype total price ($5.00)
-Order.prototype.totalPrice = function() { //for loop
+Order.prototype.totalPrice = function() {
   let receiptTotal = 0;
   for (var i = 0; i < this.Quesadillas.length; i++) {
     var receipt = this.Quesadillas[i];
@@ -47,7 +42,6 @@ Order.prototype.totalPrice = function() { //for loop
   return receiptTotal;
 };
 
-//DOM print quesadilla order details (your quesadilla price + who its for)
 Order.prototype.receiptPrintDOM = function() {
   let text = "";
   for (var i = 0; i < this.Quesadillas.length; i++) {
@@ -60,7 +54,6 @@ Order.prototype.receiptPrintDOM = function() {
   return text;
 };
 
-//DOM print user name input details (your first middle last)
 Name.prototype.nameForm = function() {
   let text = '<div class="customer-name">' + '<div class="form-group">' + '<label for="first-name">First</label>' + '<input type="text" class="form-control first-name">' + '</div>' + 
   '<div class="form-group">' + '<label for="middle-name">Middle</label>' + '<input type="text" class="form-control middle-name">' + '</div>' +
@@ -69,8 +62,6 @@ Name.prototype.nameForm = function() {
 };
 
 //USER LOGIC//
-
-
 $(document).ready(function() {
 let newOrder = new Order();
 let newName = new Name();

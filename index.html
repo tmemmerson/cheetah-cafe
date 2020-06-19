@@ -17,35 +17,37 @@
           Avery's Cheetah Cafe'
         </div>
       </div>
-      <form>
-      <div class="row"> 
-        <div class="col">
-          <button class="option btn-warning">Spicy</button>
-          <button class="option btn-warning">Chicken</button>
-          <button class="option btn-warning">Steak</button>
+        <form>
+        <div class="row"> 
+          <div class="col">
+            <button class="option btn-warning">Spicy</button>
+            <button class="option btn-warning">Chicken</button>
+            <button class="option btn-warning">Steak</button>
+          </div>
+          <div class="col-8">
+            <select class = "form-control" id="sizeList" placeholder = "Quesadilla Size">
+              <option value="cub size">Cub Size</option>
+              <option value="regular">Regular Size</option>
+              <option value="big cat">Big Cat Size</option>
+            </select>
+          </div>
+          <div class="col">
+            <button class = "option btn-warning">Place Order</button>
+            <p class = "name option btn-warning">Enter Name</p>
+            <p class = "namePrint"></p>
+          </div>
         </div>
-        <div class="col-8">
-          <select class = "form-control" id="sizeList" placeholder = "Quesadilla Size">
-            <option value="cub size">Cub Size</option>
-            <option value="regular">Regular Size</option>
-            <option value="big cat">Big Cat Size</option>
-          </select>
-        </div>
-        <div class="col">
-          top-right
-        </div>
-      </div>
+      </form>
       <div class="row">
         <div class="col">
-          bottom-left
-        </div>
-        <div class="col-6">
-          bottom-mid
-        </div>
-        <div class="col">
-          bottom-right
+          <p>Receipt Total:</p>
+          <p>$<span id = "displayPrice">0</span></p>
         </div>
         </form>
+        <p class = receiptPrintout></p>
+        <button class = "option btn-info viewOrder">see receipt</button>
+        <div class="col orderDetails">
+        </div>
       </div>
     </div>
   </body>
