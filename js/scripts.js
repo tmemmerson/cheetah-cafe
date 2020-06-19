@@ -68,7 +68,7 @@ Name.prototype.nameForm = function() {
   return text;
 };
 
-/* //USER LOGIC//
+//USER LOGIC//
 $(document).ready(function() {
 
-} */
+} 
