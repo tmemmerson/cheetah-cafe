@@ -7,47 +7,41 @@
     <script src="js/scripts.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Shojumaru&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/favicon.png">
-    <title>Avery's Cheetah Cafe</title>
+    <title>Averys Cheetah Cafe</title>
   </head>
 
   <body>
     <div class="container containerX">
-      <div class="row">
-        <div class="col" id="heading">
-          Avery's Cheetah Cafe'
-        </div>
-      </div>
+      <div class="container">
+        <h1 class = "heading">Averys Cheetah Cafe</h1>
         <form>
-        <div class="row"> 
-          <div class="col">
-            <button class="option btn-warning">Spicy</button>
-            <button class="option btn-warning">Chicken</button>
-            <button class="option btn-warning">Steak</button>
+          <div class="container">
+            <p class="option btn-warning">Spicy</p>
+            <p class="option btn-warning">Chicken</p>
+            <p class="option btn-warning">Steak</p>
           </div>
-          <div class="col-8">
-            <select class = "form-control" id="sizeList" placeholder = "Quesadilla Size">
-              <option value="cub size">Cub Size</option>
-              <option value="regular">Regular Size</option>
-              <option value="big cat">Big Cat Size</option>
-            </select>
-          </div>
-          <div class="col">
-            <button class = "option btn-warning">Place Order</button>
-            <p class = "name option btn-warning">Enter Name</p>
-            <p class = "namePrint"></p>
-          </div>
-        </div>
-      </form>
-      <div class="row">
-        <div class="col">
-          <p>Receipt Total:</p>
-          <p>$<span id = "displayPrice">0</span></p>
-        </div>
+          <p class ="selected">your notes: <span id ="customsChoice">0</span> (vegetarian includes vegan meat substitute)</p>
+          <select class = "form-control" id="sizeList" placeholder = "Quesadilla Size">
+            <option value="cub">Cub Size</option>
+            <option value="regular">Regular Size</option>
+            <option value="bigcat">Big Cat Size</option>
+          </select>
+
+          <button class = "option btn-info">Place Order</button>
+          <p class = "name option btn-primary">Enter Name</p>
+          <p class = "namePrint"></p>
         </form>
-        <p class = receiptPrintout></p>
-        <button class = "option btn-info viewOrder">see receipt</button>
-        <div class="col orderDetails">
-        </div>
+      </div>
+    </form>
+  
+      <div class="containerX">
+        <p>Receipt Total:</p>
+        <p><span id = "displayPrice">0</span></p>
+      </div>
+  
+      <p class = "receiptPrintout"></p>
+      <button class = "option btn-danger viewOrder">see receipt</button>
+      <div class="orderDetails">
       </div>
     </div>
   </body>

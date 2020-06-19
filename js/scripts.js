@@ -9,9 +9,9 @@ function Quesadilla(customs, size) {
 Quesadilla.prototype.price = function() {
   let quesadillaPrice = 12;
   let customsCount = this.customs
-  if (this.size === "cub size") {
+  if (this.size === "cub") {
     quesadillaPrice = quesadillaPrice - 7
-  } else if (this.size === "big cat") {
+  } else if (this.size === "bigcat") {
     quesadillaPrice = quesadillaPrice + 5 {
   } else {
     quesadillaPrice = quesadillaPrice +1      
@@ -53,7 +53,7 @@ Order.prototype.receiptPrintDOM = function() {
   return text;
 }
 
-Name.prototype.nameForm = function() {
+Name.prototype.printOut = function() {
   let text = '<div class="customer-name">' + 
   '<div class="form-group">' + 
   '<label for="first-name">First</label>' + 
