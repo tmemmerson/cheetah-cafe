@@ -70,5 +70,11 @@ Name.prototype.nameForm = function() {
 
 //USER LOGIC//
 $(document).ready(function() {
-
-} 
+  let newReceipt = newReceipt()
+  let newName = newName ()
+  let newCustoms = 0
+  $(".btn-warning").click(function(){
+    if ($(this).)
+  }
+)
+}
