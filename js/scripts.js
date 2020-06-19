@@ -8,9 +8,11 @@ function Quesadilla(customs, size) {
 }
 
 //name input elements (first middle last)
-
-
-
+function Name(first, middle, last) {
+  this.first = first;
+  this.middle = middle;
+  this.last = last;
+}
 
 //empty arrays for push customer choices to (quesadillas/names)
 
