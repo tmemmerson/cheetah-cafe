@@ -53,6 +53,10 @@ Order.prototype.receiptPrintDOM = function() {
   for (var i = 0; i < this.Quesadillas.length; i++) {
     text += "Quesadilla #" + (i +1) + "notes: " + this.Quesadillas[i].customs + "size: " + this.Quesadillas[i].size + "Receipt total: $" + this.Quesadillas[i].quesadillaPrice + ".00"
   }
+  text += "<div class ='receiptTotal'> total here" + this.receiptTotal() + "</div>"
+  for (var i=0; i < this.Names.length; i++) {
+    Text
+  }
 }
 
 //DOM print user name input details (your first middle last)
