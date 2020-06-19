@@ -61,7 +61,7 @@ Order.prototype.receiptPrintDOM = function() {
 }
 
 //DOM print user name input details (your first middle last)
-Order.prototype.namePrintDOM = function() {
+Name.prototype.nameForm = function() {
 
 }
 
