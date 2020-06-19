@@ -79,13 +79,23 @@ $(".btn-warning").click(function( {
   if ($(this).hasClass("clicked") === true) {
     customsChoice += 4
   }
-  $(this).toggleClass("clicked")
+  $(this).toggleClass("clicked");
   customsChoice++
   $("#customsChoice").text(customsChoice);
 });
-$
-
-
+$(".name").click(function() {
+  $(".namePrint").append(newName.nameForm())
+  $(".name").hide();
+  $(".customer-name").click(function() {
+    let first = $(".first-name").val()
+    let middle = $(".middle-name").val()
+    let last = $(".last-name").val()
+    newName.first = first
+    newName.middle = middle
+    newName.last = last
+    newOrder.Names.push(newName)
+  })
+})
 
 $("form").submit(function(event) {
   let customs = customsChoice

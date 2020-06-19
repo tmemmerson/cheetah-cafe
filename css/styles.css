@@ -12,3 +12,11 @@ body {
   font-weight: 300;
   font-size: x-large;
 }
+
+.clicked {
+}
+
+.option {
+  padding: 25px;
+  margin: 12px;
+}
