@@ -69,12 +69,24 @@ Name.prototype.nameForm = function() {
 };
 
 //USER LOGIC//
+
+
 $(document).ready(function() {
-  let newReceipt = newReceipt()
-  let newName = newName ()
-  let newCustoms = 0
-  $(".btn-warning").click(function(){
-    if ($(this).)
-  }
-)
-}
+
+
+$("form").submit(function(event) {
+  let customs = customsChoice
+  let newQuesadilla = new Quesadilla(customs, size);
+  let displayPrice = newQuesadilla.price(customs, size)
+  let size = $("#sizeList").val()
+  $("#displayPrice").text(newQuesadilla.price(customs, size))
+  newOrder.Quesadillas.push(newQuesadilla);
+  event.preventDefault()
+  $(".receiptPrintout").text("")
+  $(".receiptPrintout").append("<li>Avery's famous " + newQuesadilla.size + " quesadilla with the notes: " + newQuesadilla.customs + ".</li>")
+})
+$(".viewOrder").click(function() {
+  $(".orderDetails").text("")
+  $(".orderDetails").append(newOrder.printOrder())
+})
+});
