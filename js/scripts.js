@@ -37,8 +37,10 @@ Order.prototype.orderPrintDOM = function() {
 
 //DOM print user name input details (your first middle last)
 Order.prototype.namePrintDOM = function() {
-  
+
 }
 
 //USER LOGIC//
-
+$(document).ready(function() {
+  
+}
