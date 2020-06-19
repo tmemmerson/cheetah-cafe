@@ -21,7 +21,9 @@ function Order() {
 }
 
 //prototype price changes relations (+=5/-=2)
-
+Quesadilla.prototype.price = function() {
+  
+}
 //prototype total price ($5.00)
 
 //DOM print quesadilla order details (your quesadilla price)
