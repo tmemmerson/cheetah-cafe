@@ -22,7 +22,17 @@ function Order() {
 
 //prototype price changes relations (+=5/-=2)
 Quesadilla.prototype.price = function() {
-  
+  let quesadillaPrice = 12;
+  let customsCount = this.customs
+  if (this.size === "cub size") {
+    quesadillaPrice = quesadillaPrice - 7
+  } else if (this.size === "big cat") {
+    quesadillaPrice = quesadillaPrice + 5) {
+  } else {
+    quesadillaPrice = quesadillaPrice;      
+  }
+  let customsPrice = this.customs
+  }
 }
 
 //prototype total price ($5.00)
