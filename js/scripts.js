@@ -1,4 +1,4 @@
-//BUSINESS LOGIC
+//BUSINESS LOGIC//
 
 //quesadilla price elements (spicy/meat/vegetarian)
 
@@ -13,4 +13,6 @@
 //DOM print quesadilla order details (your quesadilla price)
 
 //DOM print user name input details (your first middle last)
+
+//USER LOGIC//
 
