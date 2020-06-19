@@ -47,7 +47,7 @@ Order.prototype.totalPrice = function() { //for loop
   return receiptTotal;
 }
 
-//DOM print quesadilla order details (your quesadilla price)
+//DOM print quesadilla order details (your quesadilla price + who its for)
 Order.prototype.receiptPrintDOM = function() {
   let text = ""
   for (var i = 0; i < this.Quesadillas.length; i++) {
