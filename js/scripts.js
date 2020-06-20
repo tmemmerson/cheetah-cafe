@@ -54,7 +54,7 @@ Name.prototype.printOut = function() {
     '<div class="form-group">' +
     '<label for="new-last">last</label>' +
     '<input type="text" class="form-control new-last">' +
-    '<p class = "Name2 btn btn-warning">Submit Name</p>' +
+    '<p class = "Name2 btn is-primary">Submit Name</p>' +
     '</div>' +
     '</div>';
   return text
@@ -76,7 +76,7 @@ $(document).ready(function() {
   let newOrder = new Order()
   let newName = new Name()
   let customsChoice = 0
-  $(".btn-warning").click(function() {
+  $(".is-primary").click(function() {
     if ($(this).hasClass("clicked") === true) {
       customsChoice -= 2
     }

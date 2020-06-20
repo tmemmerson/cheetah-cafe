@@ -3,7 +3,7 @@ body {
 }
 
 .containerX {
-  background: #e2ca41d5;
+  background: #b4b4b4e1;
   font-family: 'Shojumaru', cursive;
 }
 
@@ -14,6 +14,8 @@ body {
 }
 
 .clicked {
+  background-color: #e47105;
+  border: 2px solid black;
 }
 
 .option {

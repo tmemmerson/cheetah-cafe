@@ -12,26 +12,31 @@
 
   <body>
     <div class="container containerX">
-        <h1 class = "heading">Averys Cheetah Cafe</h1>
+        <h1 class = "heading">Avery's Cheetah Cafe</h1>
+          
+
         <form>
+
+          <p class = "name btn is-primary">Enter Name</p>
+          <p class = "namePrint"></p>
+
           <div class="container">
-            <p class="option btn-warning">Spicy</p>
-            <p class="option btn-warning">Chicken</p>
-            <p class="option btn-warning">Steak</p>
+            <p class="option is-primary">Spicy</p>
+            <p class="option is-primary">Chicken</p>
+            <p class="option is-primary">Steak</p>
           </div>
-          <p class ="selected">your notes: <span id ="customsCount">0</span> (vegetarian includes tofu meat substitute)</p>
+          <p class ="selected">add-ons: <span id ="customsCount">0</span> (Each Add-on $1)</p>
+
           <select class = "form-control" id="sizeList" placeholder = "Quesadilla Size">
             <option value="cub">Cub Size</option>
             <option value="regular">Regular Size</option>
             <option value="bigcat">Big Cat Size</option>
           </select>
+          <button class = "btn is-primary">Add to order</button>
 
-          <button class = "btn btn-info">Place Order</button>
-          <p class = "name btn btn-info">Enter Name</p>
-          <p class = "namePrint"></p>
         </form>
       <p class = "receiptPrintout"></p>
-      <button class = "option btn-warning viewOrder">see receipt</button>
+      <button class = "option is-primary viewOrder">see receipt</button>
       <div class="orderDetails">
       </div>
     </div>
