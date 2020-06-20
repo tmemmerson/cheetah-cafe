@@ -3,13 +3,16 @@ body {
 }
 
 .containerX {
-  background: #b4b4b4e1;
+  background: #ebdfa7d7;
   font-family: 'Shojumaru', cursive;
+  border-style: double;
+  border-color: darkgoldenrod;
+  border-width: 15px;
 }
 
 .heading {
   font-family: 'Shojumaru', cursive;
-  font-weight: 300;
+  font-weight:280;
   font-size: x-large;
   text-align: center;
 }
@@ -36,22 +39,53 @@ body {
 	background-repeat:no-repeat;
 	background-size:cover;
 	height:420px;
-	width:300px;
+	width:255px;
 }
-
 
 .quesadillaIMG {
 	background-image: url('https://coding-assets.s3-us-west-2.amazonaws.com/img/quesadilla.png');
 	background-position:center;
 	background-repeat:no-repeat;
 	background-size:cover;
-	height:383px;
-  width:575px;
-  align-content: center;
+  height:233px;
+  width: 350px;
 }
+
 .gutter {
   padding: 15px;
   font-size: x-small;
 }
 /* THERE IS AN EVENT LISTENER ON A BUTTON FIND LATER */
 
+.cheetahIMG {
+	background-image: url('https://coding-assets.s3-us-west-2.amazonaws.com/img/cheetah-side-01.png');
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	height:190px;
+  width:190px;
+  vertical-align: bottom;
+  align-content: center;
+  padding: 25px;
+}
+
+.treeIMG {
+	background-image: url('https://coding-assets.s3-us-west-2.amazonaws.com/img/tree-side-02.png');
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	height:190px;
+  width:220px;
+  vertical-align: bottom;
+  align-content: center;
+  padding: 25px;
+}
+
+.animal-friendsIMG {
+	background-image: url('https://coding-assets.s3-us-west-2.amazonaws.com/img/animal-friends.png');
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	height:395px;
+  width:550px;
+}
