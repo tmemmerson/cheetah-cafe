@@ -63,7 +63,7 @@ Name.prototype.printOut = function() {
 Order.prototype.printOrder = function() {
   let text = ""
   for (let i = 0; i < this.Quesadillas.length; i++) {
-    text += "<li>Item number: " + (i + 1) + " | size: " + this.Quesadillas[i].size + " | price: $" + this.Quesadillas[i].quesadillaPrice + ".00</li>"
+    text += "<li>Item #: " + (i + 1) + " | size: " + this.Quesadillas[i].size + " | price: $" + this.Quesadillas[i].quesadillaPrice + ".00</li>"
   }
   text += "<p class = 'totalOrder'>your total order price will be $" + this.totalPrice() + "</p>"
   for (let i = 0; i < this.Names.length; i++) {

@@ -50,6 +50,7 @@ body {
   align-content: center;
 }
 .gutter {
-  padding: 20px;
+  padding: 15px;
   font-size: x-small;
 }
+/* THERE IS AN EVENT LISTENER ON A BUTTON FIND LATER */
