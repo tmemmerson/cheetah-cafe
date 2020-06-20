@@ -63,7 +63,7 @@ Name.prototype.printOut = function() {
 Order.prototype.printOrder = function() {
   let text = ""
   for (let i = 0; i < this.Quesadillas.length; i++) {
-    text += "<li>Item number: " + (i + 1) + " (add-ons:" + this.Quesadillas[i].customs + ") | size: " + this.Quesadillas[i].size + " | price: $" + this.Quesadillas[i].quesadillaPrice + ".00</li>"
+    text += "<li>Item number: " + (i + 1) + " | size: " + this.Quesadillas[i].size + " | price: $" + this.Quesadillas[i].quesadillaPrice + ".00</li>"
   }
   text += "<p class = 'totalOrder'>your total order price will be $" + this.totalPrice() + "</p>"
   for (let i = 0; i < this.Names.length; i++) {
@@ -78,7 +78,7 @@ $(document).ready(function() {
   let customsChoice = 0
   $(".is-primary").click(function() {
     if ($(this).hasClass("clicked") === true) {
-      customsChoice -= 1
+      customsChoice -=0
     }
     $(this).toggleClass("clicked")
     customsChoice++
