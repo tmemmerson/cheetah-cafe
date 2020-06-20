@@ -1,38 +1,38 @@
-//BUSINESS LOGIC//
+
 
 function Quesadilla(customs, size) {
   this.customs = customs;
   this.size = size
-  this.quesadillaPrice = this.price(customs, size);
+  this.quesadillaPrice = this.price(customs, size)
 }
 
 Quesadilla.prototype.price = function() {
-  let quesadillaPrice = 12;
+  let quesadillaPrice = 15;
   let customsCount = this.customs
   if (this.size === "cub") {
     quesadillaPrice = quesadillaPrice - 7
   } else if (this.size === "bigcat") {
-    quesadillaPrice = quesadillaPrice + 5 {
+    quesadillaPrice = quesadillaPrice + 5
   } else {
-    quesadillaPrice = quesadillaPrice +1      
+    quesadillaPrice = quesadillaPrice + 1
   }
-  let customsPrice = customsCount;
+  let customsPrice = customsCount
   quesadillaPrice = quesadillaPrice + customsPrice;
   return quesadillaPrice;
-}
-
-Order.prototype.totalPrice = function() {
-  let receiptTotal = 0
-  for (let i=0; i < this.Quesadillas.length; i++) {
-    let receipt = this.Quesadillas[i];
-    receiptTotal += this.Quesadillas[i].quesadillaPrice
-  }
-  return receiptTotal;
 }
 
 function Order() {
   this.Quesadillas = []
   this.Names = []
+}
+
+Order.prototype.totalPrice = function() {
+  let receiptTotal = 0
+  for (let i = 0; i < this.Quesadillas.length; i++) {
+    let single = this.Quesadillas[i]
+    receiptTotal += this.Quesadillas[i].quesadillaPrice
+  }
+  return receiptTotal;
 }
 
 function Name(first, middle, last) {
@@ -41,80 +41,75 @@ function Name(first, middle, last) {
   this.last = last;
 }
 
-Order.prototype.receiptPrintDOM = function() {
+Name.prototype.printOut = function() {
+  let text = '<div class="new-Name">' +
+    '<div class="form-group">' +
+    '<label for="new-first">first</label>' +
+    '<input type="text" class="form-control new-first">' +
+    '</div>' +
+    '<div class="form-group">' +
+    '<label for="new-middle">middle</label>' +
+    '<input type="text" class="form-control new-middle">' +
+    '</div>' +
+    '<div class="form-group">' +
+    '<label for="new-last">last</label>' +
+    '<input type="text" class="form-control new-last">' +
+    '<p class = "Name2 btn btn-warning">Submit Name</p>' +
+    '</div>' +
+    '</div>';
+  return text
+}
+
+Order.prototype.printOrder = function() {
   let text = ""
-  for (let i=0; i<this.Quesadillas.length; i++) {
-    text += "<li>Quesadilla num " + (i+1) + "notes: " + this.Quesadillas[i].customs + "size: " + this.Quesadillas[i].size + " Receipt total: $" + this.Quesadillas[i].quesadillaPrice + ".00</li>"
+  for (let i = 0; i < this.Quesadillas.length; i++) {
+    text += "<li>Quesadilla number: " + (i + 1) + " (notes: " + this.Quesadillas[i].customs + ") size: " + this.Quesadillas[i].size + " $" + this.Quesadillas[i].quesadillaPrice + "</li>"
   }
-  text += "<p>total here" + this.receiptTotal() + "</p>";
-  for (let i=0; i < this.Names.length; i++) {
-    text += "<p> we will announce this order for: " + this.Names[0].first + " " + this.Names[0].middle + " " + this.Names[0].last +"</p>"
+  text += "<p class = 'totalOrder'>your total order price will be $" + this.totalPrice() + "</p>"
+  for (let i = 0; i < this.Names.length; i++) {
+    text += "<p> We will call out " + this.Names[0].first + " " + this.Names[0].middle + " " + this.Names[0].last + " when your order's ready</p>"
   };
   return text;
 }
 
-Name.prototype.printOut = function() {
-  let text = '<div class="customer-name">' + 
-  '<div class="form-group">' + 
-  '<label for="first-name">First</label>' + 
-  '<input type="text" class="form-control first-name">' + 
-  '</div>' + 
-  '<div class="form-group">' + 
-  '<label for="middle-name">Middle</label>' + 
-  '<input type="text" class="form-control middle-name">' + 
-  '</div>' +
-  '<div class="form-group">' + 
-  '<label for="last-name">Last</label>' + 
-  '<input type="text" class="form-control last-name">' + 
-  '</div>' + 
-  '</div>';
-  return text;
-}
-
-
 $(document).ready(function() {
-let newOrder = new Order()
-let newName = new Name()
-let customsChoice = 0
-
-$(".btn-primary").click(function() {
-  if ($(this).hasClass("clicked") === true) {
-    customsChoice -= 2
-  }
-  $(this).toggleClass("clicked");
-  customsChoice++
-  $("#customsChoice").text(customsChoice);
-});
-
-$(".name").click(function() {
-  $(".nameprint").append(newName.printOut())
-  $(".name").hide();
-  $(".customer-name").click(function() {
-    let first = $(".first-name").val()
-    let middle = $(".middle-name").val()
-    let last = $(".last-name").val()
-    newName.first = first
-    newName.middle = middle
-    newName.last = last
-    newOrder.Names.push(newName)
-    console.log(newOrder)
+  let newOrder = new Order()
+  let newName = new Name()
+  let customsChoice = 0
+  $(".btn-warning").click(function() {
+    if ($(this).hasClass("clicked") === true) {
+      customsChoice -= 2
+    }
+    $(this).toggleClass("clicked")
+    customsChoice++
+    $("#customsCount").text(customsChoice)
+  });
+  $(".Name").click(function() {
+    $(".Nameprint").append(newName.printOut())
+    $(".Name").hide();
+    $(".Name2").click(function() {
+      let first = $(".new-first").val()
+      let middle = $(".new-middle").val()
+      let last = $(".new-last").val()
+      newName.first = first
+      newName.middle = middle
+      newName.last = last
+      newOrder.Names.push(newName)
+      console.log(newOrder)
+    })
   })
-})
+  $("form").submit(function(event) {
+    let size = $("#sizeList").val()
+    let customs = customsChoice
+    let newQuesadilla = new Quesadilla(customs, size);
+    let finalPrice = newQuesadilla.price(customs, size)
+    $("#finalPrice").text(newQuesadilla.price(customs, size))
+    newOrder.Quesadillas.push(newQuesadilla);
+    event.preventDefault()
+  })
 
-$("form").submit(function(event) {
-  let size = $("#sizeList").val()
-  let customs = customsChoice
-  let newQuesadilla = new Quesadilla(customs, size);
-  let displayPrice = newQuesadilla.price(customs, size)
-  $("#displayPrice").text(newQuesadilla.price(customs, size))
-  newOrder.Quesadillas.push(newQuesadilla);
-  console.log(newOrder)
-  event.preventDefault()
-  $(".receiptPrintout").text("")
-  $(".receiptPrintout").append("<li>Averys famous " + newQuesadilla.size + " quesadilla with the notes: " + newQuesadilla.customs + ".</li>")
-})
-$(".viewOrder").click(function() {
-  $(".orderDetails").text("")
-  $(".orderDetails").append(newOrder.printOrder())
-})
+  $(".viewOrder").click(function() {
+    $(".orderDetails").text("")
+    $(".orderDetails").append(newOrder.printOrder())
+  })
 });

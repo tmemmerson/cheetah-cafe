@@ -12,7 +12,6 @@
 
   <body>
     <div class="container containerX">
-      <div class="container">
         <h1 class = "heading">Averys Cheetah Cafe</h1>
         <form>
           <div class="container">
@@ -20,27 +19,19 @@
             <p class="option btn-warning">Chicken</p>
             <p class="option btn-warning">Steak</p>
           </div>
-          <p class ="selected">your notes: <span id ="customsChoice">0</span> (vegetarian includes vegan meat substitute)</p>
+          <p class ="selected">your notes: <span id ="customsCount">0</span> (vegetarian includes tofu meat substitute)</p>
           <select class = "form-control" id="sizeList" placeholder = "Quesadilla Size">
             <option value="cub">Cub Size</option>
             <option value="regular">Regular Size</option>
             <option value="bigcat">Big Cat Size</option>
           </select>
 
-          <button class = "option btn-info">Place Order</button>
-          <p class = "name option btn-primary">Enter Name</p>
+          <button class = "btn btn-info">Place Order</button>
+          <p class = "name btn btn-info">Enter Name</p>
           <p class = "namePrint"></p>
         </form>
-      </div>
-    </form>
-  
-      <div class="containerX">
-        <p>Receipt Total:</p>
-        <p><span id = "displayPrice">0</span></p>
-      </div>
-  
       <p class = "receiptPrintout"></p>
-      <button class = "option btn-danger viewOrder">see receipt</button>
+      <button class = "option btn-warning viewOrder">see receipt</button>
       <div class="orderDetails">
       </div>
     </div>
