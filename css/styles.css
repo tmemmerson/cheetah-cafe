@@ -70,15 +70,16 @@ body {
 }
 
 .treeIMG {
-	background-image: url('https://coding-assets.s3-us-west-2.amazonaws.com/img/tree-side-02.png');
+	background-image: url('https://coding-assets.s3-us-west-2.amazonaws.com/img/tree.png');
 	background-position:center;
 	background-repeat:no-repeat;
 	background-size:cover;
-	height:190px;
-  width:220px;
+	height:150px;
+  width:150px;
   vertical-align: bottom;
   align-content: center;
-  padding: 25px;
+  padding: 5px;
+  vertical-align: bottom;
 }
 
 .animal-friendsIMG {
@@ -86,8 +87,8 @@ body {
 	background-position:center;
 	background-repeat:no-repeat;
 	background-size:cover;
-	height:562px;
-  width:1000px;
+	height:429px;
+  width:650px;
 }
 
 .shieldIMG {

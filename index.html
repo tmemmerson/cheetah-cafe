@@ -20,49 +20,45 @@
         </div>
       </div>
       <form>
-          <div class="row">
-              <div class="col-md-4">
-                <p class = "name btn is-primary">Enter Name</p>
-                <p class = "namePrint"></p>
+        <div class="row">
+            <div class="col-md-4">
+              <p class = "name btn is-primary">Enter Name</p>
+              <p class = "namePrint"></p>
+            </div>
+            <div class="col-md-2">
+              <h2 class = "heading">Add Ons</h2>
+              <p class="is-primary">Spicy</p>
+              <p class="is-primary">Chicken</p>
+              <p class="is-primary">Steak</p>
+              <p class="is-primary">tofu</p>
+              <p class="is-primary">pork</p>
+              <p class="is-primary">secret sauce</p>
+              <p class ="selected"> add-ons:$<span id ="customsCount">0</span> ($1/ea)</p>
+            </div>
+            <div class="col-md-2">
+              <h2 class = "heading">Size</h2>
+              <select class = "form-control" id="sizeList" placeholder = "Quesadilla Size">
+                <option value="cub">Cub Size</option>
+                <option value="regular">Regular Size</option>
+                <option value="big cat">Big Cat Size</option>
+              </select>
+              <button class = "btn is-info">Add to order</button>
+              <button class = "option is-info viewOrder">see receipt</button>
+            </div>
+            <div class="col-md-4">
+              <div class="col-md-3"></div>
+              <div class="col-md-6 receiptIMG">
+                <div class="orderDetails gutter"></div>
+                  <p class = "receiptPrintout"></p>
               </div>
-
-              <div class="col-md-2">
-                <h2 class = "heading">Add Ons</h2>
-                <p class="is-primary">Spicy</p>
-                <p class="is-primary">Chicken</p>
-                <p class="is-primary">Steak</p>
-                <p class="is-primary">tofu</p>
-                <p class="is-primary">pork</p>
-                <p class="is-primary">secret sauce</p>
-                <p class ="selected"> add-ons:$<span id ="customsCount">0</span> ($1/ea)</p>
-              </div>
-              <div class="col-md-2">
-                <h2 class = "heading">Size</h2>
-                <select class = "form-control" id="sizeList" placeholder = "Quesadilla Size">
-                  <option value="cub">Cub Size</option>
-                  <option value="regular">Regular Size</option>
-                  <option value="big cat">Big Cat Size</option>
-                </select>
-                <button class = "btn is-info">Add to order</button>
-                <button class = "option is-info viewOrder">see receipt</button>
-              </div>
-
-              <div class="col-md-4">
-                
-                  <div class="col-md-3"></div>
-                  <div class="col-md-6 receiptIMG">
-                    <div class="orderDetails gutter"></div>
-                    <p class = "receiptPrintout"></p>
-                  </div>
-                  <div class="col-md-3"></div>
-                </div>
-          </div>
+              <div class="col-md-3"></div>
+            </div>
+        </div>
         </form>
         <div class="container">
-              <div class="row"></div>
-              <div class="col-md-1 col-lg-2"></div>
-              <div class="col-md-10 col-lg-8 animal-friendsIMG"></div>
-              <div class="col-md-1 col-lg-2"></div>
+          <div class="col-md-2 col-lg-2"></div>
+          <div class="col-md-8 col-lg-8 animal-friendsIMG"></div>
+          <div class="col-md-2 col-lg-2"></div>
         </div>
     </div>
   </body>
