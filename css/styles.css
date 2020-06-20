@@ -86,6 +86,15 @@ body {
 	background-position:center;
 	background-repeat:no-repeat;
 	background-size:cover;
-	height:395px;
-  width:550px;
+	height:500px;
+  width:750px;
+}
+
+.shieldIMG {
+	background-image: url('https://coding-assets.s3-us-west-2.amazonaws.com/img/shield');
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	height:150px;
+  width:150px;
 }
