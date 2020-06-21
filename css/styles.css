@@ -11,9 +11,16 @@ body {
 }
 
 .heading {
+  font-family: 'Shojumaru', regular;
+  font-weight: 400;
+  font-size: x-;
+  text-align: center;
+}
+
+.heading2 {
   font-family: 'Shojumaru', cursive;
-  font-weight:280;
-  font-size: x-large;
+  font-weight: 200;
+  font-size: small;
   text-align: center;
 }
 
@@ -29,17 +36,17 @@ body {
 
 #sizeList {
   font-family: 'Shojumaru', cursive;
-  font-weight: 300;
-  font-size: small;
+  font-weight: 200;
+  font-size: medium;
 }
 
 .receiptIMG {
-	background-image: url('https://coding-assets.s3-us-west-2.amazonaws.com/img/receipt3.png');
+	background-image: url('https://coding-assets.s3-us-west-2.amazonaws.com/img/receipt4.png');
 	background-position:center;
 	background-repeat:no-repeat;
 	background-size:cover;
-	height:420px;
-	width:255px;
+	height: 220px;
+	width: 305px;
 }
 
 .quesadillaIMG {
@@ -47,8 +54,9 @@ body {
 	background-position:center;
 	background-repeat:no-repeat;
 	background-size:cover;
-  height:233px;
-  width: 350px;
+  height:263px;
+  width: 360px;
+  border: #e47105 3px solid;
 }
 
 .gutter {
@@ -91,11 +99,17 @@ body {
   width:650px;
 }
 
-.shieldIMG {
-	background-image: url('https://coding-assets.s3-us-west-2.amazonaws.com/img/shield');
+.averyDilla {
+  border: #e47105 9px double;
+}
+
+.cheetahGIF {
+	background-image: url('https://coding-assets.s3-us-west-2.amazonaws.com/img/cheetah2.gif');
 	background-position:center;
 	background-repeat:no-repeat;
 	background-size:cover;
-	height:150px;
-  width:150px;
+	height:175px;
+  width:350px;
+  align-content: center;
+  vertical-align: bottom;
 }
