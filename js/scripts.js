@@ -95,7 +95,6 @@ $(document).ready(function() {
       newName.middle = middle
       newName.last = last
       newOrder.Names.push(newName)
-      console.log(newOrder)
     })
   })
   $("form").submit(function(event) {
